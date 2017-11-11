@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_taskbar"
+        android:background="#ad66d9"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btn_history"
+            android:layout_width="@dimen/size_icon_task_bar"
+            android:layout_height="@dimen/size_icon_task_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_icon_task_bar"
+            android:src="@drawable/ic_history_48px" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:layout_centerHorizontal="true"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_fragment1"
+                android:layout_width="@dimen/size_button_circle"
+                android:layout_height="@dimen/size_button_circle"
+                android:background="@drawable/circle_default" />
+
+            <Button
+                android:id="@+id/btn_fragment2"
+                android:layout_width="@dimen/size_button_circle"
+                android:layout_height="@dimen/size_button_circle"
+                android:layout_marginLeft="@dimen/margin_left_button_circle"
+                android:background="@drawable/circle_default" />
+
+            <Button
+                android:id="@+id/btn_fragment3"
+                android:layout_width="@dimen/size_button_circle"
+                android:layout_height="@dimen/size_button_circle"
+                android:layout_marginLeft="@dimen/margin_left_button_circle"
+                android:background="@drawable/circle_default" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_search"
+            android:layout_width="@dimen/size_icon_task_bar"
+            android:layout_height="@dimen/size_icon_task_bar"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_icon_task_bar"
+            android:layout_marginRight="@dimen/margin_icon_task_bar"
+            android:background="@drawable/ic_search_48px" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>
